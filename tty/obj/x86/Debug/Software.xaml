@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="tty.Software"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <HyperlinkButton  NavigateUri="http://en.softonic.com/" Margin="466,471,0,44" Height="205">
+            <Image x:ConnectionId='8' x:Name="image" Source="Image/ssoftonicc.jpg" HorizontalAlignment="Left" Height="161" Margin="0,-76,0,-52" VerticalAlignment="Top" Width="349"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.brothersoft.com/" Margin="30,452,0,67" Height="201" Width="413">
+            <Image x:ConnectionId='7' x:Name="image3" Source="Image/brothersoft.gif" HorizontalAlignment="Left" Margin="0,-7,0,0" Width="360" Height="142" VerticalAlignment="Top"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.freewarefiles.com/" Margin="848,220,-27,403">
+            <Image x:ConnectionId='6' x:Name="image4" Source="Image/fwf.jpg" HorizontalAlignment="Left" Height="85" Margin="0" VerticalAlignment="Top" Width="409"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.softpedia.com/" Margin="860,471,0,122" Height="127" Width="364">
+            <Image x:ConnectionId='5' x:Name="image5" Source="Image/softpedia.png" HorizontalAlignment="Left" Height="125.907" Margin="-0.005,-0.02,0,-10.887" VerticalAlignment="Top" Width="361.132" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="-1.105" SkewY="1.202" TranslateX="0.086" TranslateY="4.468"/>
+                </Image.RenderTransform>
+            </Image>
+        </HyperlinkButton>
+        <HyperlinkButton  NavigateUri="http://www.cnet.com/" Margin="66,220,0,403" Height="97">
+            <Image x:ConnectionId='4' x:Name="image7" Source="Image/cnet.png" HorizontalAlignment="Left" Height="81" Margin="0" VerticalAlignment="Top" Width="353"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://filehippo.com/" Margin="466,220,0,403" Height="97" Width="322">
+            <Image x:ConnectionId='3' x:Name="image8" Source="Image/fhippo.png" HorizontalAlignment="Left" Margin="0,-25,-15,-24" Width="337" RenderTransformOrigin="0.5,0.5"/>
+        </HyperlinkButton>
+        <Button x:ConnectionId='1' x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="1144,10,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Width="126"                     />
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="355,32,0,0" TextWrapping="Wrap" Text="Software Sites" VerticalAlignment="Top" FontFamily="Century" FontSize="73.333"/>
+
+    </Grid>
+</Page>
+

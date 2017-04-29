@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="tty.News"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <HyperlinkButton NavigateUri="https://news.google.com/" Margin="61,72,0,561" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="319">
+            <Image x:ConnectionId='10' x:Name="image1" Source="Image/googlenews.jpg" HorizontalAlignment="Left" Height="156" Margin="0,-50,-65,-31" VerticalAlignment="Top" Width="384" RenderTransformOrigin="0.397,-0.119"/>
+        </HyperlinkButton>
+        <HyperlinkButton  NavigateUri="https://in.news.yahoo.com/" Margin="61,233,0,282" Height="205">
+            <Image x:ConnectionId='9' x:Name="image" Source="Image/yahoonews.png" HorizontalAlignment="Left" Height="243" Margin="0,4,0,-54" VerticalAlignment="Top" Width="384"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.bbc.com/news" Margin="488,35,0,516" Height="169" Width="220">
+            <Image x:ConnectionId='8' x:Name="image2" Source="Image/bbcnews.png" Margin="0,0,0,-12" HorizontalAlignment="Right" Width="220" Height="165" VerticalAlignment="Bottom"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://edition.cnn.com/" Margin="61,492,0,24" Height="204">
+            <Image x:ConnectionId='7' x:Name="image3" Source="Image/cnnnews.jpg" HorizontalAlignment="Left" Margin="0" Width="384"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.hindustantimes.com/" Margin="774,298,-23,325">
+            <Image x:ConnectionId='6' x:Name="image4" Source="Image/htnews.jpg" HorizontalAlignment="Left" Height="85" Margin="0" VerticalAlignment="Top" Width="479"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.indiatimes.com/news/" Margin="486,493,0,24" Width="266">
+            <Image x:ConnectionId='5' x:Name="image5" Source="Image/indiatimesnews.png" Height="191.208" Margin="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="0.126"/>
+                </Image.RenderTransform>
+            </Image>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.nytimes.com/" Margin="757,35,0,489">
+            <Image x:ConnectionId='4' x:Name="image6" Source="Image/tnytnews.png" HorizontalAlignment="Left" Height="112" Margin="0" VerticalAlignment="Top" Width="496"/>
+        </HyperlinkButton>
+        <HyperlinkButton  NavigateUri="http://www.ndtv.com/" Margin="842,477,0,0" Width="321" Height="243">
+            <Image x:ConnectionId='3' x:Name="image7" Source="Image/ndtvnews.png" HorizontalAlignment="Left" Height="210" Margin="50,0,0,0" VerticalAlignment="Top" Width="214"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.jagran.com/" Margin="486,246,0,246">
+            <Image x:ConnectionId='2' x:Name="image8" Source="Image/jagrannews.png" HorizontalAlignment="Left" Height="216" Margin="0" VerticalAlignment="Top" Width="238"/>
+        </HyperlinkButton>
+        <Button x:ConnectionId='1' x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="1144,10,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Width="126"                     />
+
+    </Grid>
+</Page>
+

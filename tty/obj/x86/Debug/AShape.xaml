@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="tty.AShape"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' x:Name="button" Content="Triangle" HorizontalAlignment="Left" Margin="99,276,0,0" VerticalAlignment="Top"                      Background="{x:Null}" Foreground="#FFF00E0E" RenderTransformOrigin="0.984,5.115" FontFamily="Arial" FontSize="29.333"/>
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="27,29,0,0" TextWrapping="Wrap" Text="Area of which Figure would you like to calculate?" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Width="1119" Height="65"/>
+        <Button x:ConnectionId='3' x:Name="button_Copy3" Content="Ellipse" HorizontalAlignment="Left" Background="{x:Null}" Margin="1074,276,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Foreground="#FFF90202"                           />
+        <Button x:ConnectionId='4' x:Name="button_Copy4" Content="Sector" HorizontalAlignment="Left" Background="{x:Null}" Margin="754,276,0,0" VerticalAlignment="Top" Foreground="Red" FontFamily="Arial" FontSize="29.333"                           />
+        <Button x:ConnectionId='5' x:Name="button_Copy5" Content="Circle" HorizontalAlignment="Left" Margin="437,276,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Foreground="Red" Background="{x:Null}"                           />
+        <Image x:ConnectionId='6' x:Name="image" Source="image/Trianglem.jpeg" HorizontalAlignment="Left" Height="134" Margin="58,139,0,0" VerticalAlignment="Top" Width="219"/>
+        <Image x:ConnectionId='7' x:Name="image1" Source="image/Circle.gif" HorizontalAlignment="Left" Height="134" Margin="422,139,0,0" VerticalAlignment="Top" Width="219"/>
+        <Image x:ConnectionId='8' x:Name="image1_Copy" Source="image/sector.gif" HorizontalAlignment="Left" Height="156" Margin="730,117,0,0" VerticalAlignment="Top" Width="199"/>
+        <Image x:ConnectionId='9' x:Name="image1_Copy1" Source="image/elllipse.png" HorizontalAlignment="Left" Height="122" Margin="1026,139,0,0" VerticalAlignment="Top" Width="197"/>
+        <Image x:ConnectionId='10' x:Name="image_Copy" Source="image/sq.gif" HorizontalAlignment="Left" Height="134" Margin="99,441,0,0" VerticalAlignment="Top" Width="133"/>
+        <Image x:ConnectionId='11' x:Name="image_Copy1" Source="image/Trapezum.jpg" Height="248" Margin="997,327,-2,0" VerticalAlignment="Top"/>
+        <Image x:ConnectionId='12' x:Name="image_Copy2" Source="image/parallelogram.png" HorizontalAlignment="Left" Height="134" Margin="712,467,0,0" VerticalAlignment="Top" Width="219" RenderTransformOrigin="0.517,0.99"/>
+        <Image x:ConnectionId='13' x:Name="image_Copy3" Source="image/rectangle.jpg" HorizontalAlignment="Left" Height="134" Margin="376,441,0,0" VerticalAlignment="Top" Width="219"/>
+        <Button x:ConnectionId='14' x:Name="button1" Content="Parallelogram" HorizontalAlignment="Left" Margin="730,594,0,0" VerticalAlignment="Top" Foreground="Red" Background="#33FBF9F9" FontFamily="Arial" FontSize="29.333"                      />
+        <Button x:ConnectionId='15' x:Name="button2" Content="Trapezium" HorizontalAlignment="Left" Margin="1065,594,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Background="#33FFFFFF" Foreground="Red"                      />
+        <Button x:ConnectionId='16' x:Name="button3" Content="Rectangle" HorizontalAlignment="Left" Margin="403,594,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Foreground="Red" FontFamily="Arial" FontSize="29.333"                      />
+        <Button x:ConnectionId='17' x:Name="button4" Content="Square" HorizontalAlignment="Left" Margin="112,594,0,0" VerticalAlignment="Top" Foreground="Red" Background="#33FFFFFF" FontFamily="Arial" FontSize="29.333"                      />
+        <Button x:ConnectionId='18' x:Name="button10" Content="Back To Main Menu" HorizontalAlignment="Left" Margin="961,658,0,0" VerticalAlignment="Top" Background="#33FFFFFF" Foreground="Red" FontSize="33.333" FontFamily="Global Serif"                       />
+
+    </Grid>
+</Page>
+

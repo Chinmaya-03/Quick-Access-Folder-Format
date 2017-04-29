@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="tty.Trapezium"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="94,155,0,0" TextWrapping="Wrap" Text="Enter the length of the sides of the Trapezium :-" VerticalAlignment="Top" FontFamily="Arial" FontSize="40"/>
+        <TextBox x:Name="i1" HorizontalAlignment="Left" Margin="128,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" PlaceholderText="Side(a)"/>
+        <TextBox x:Name="i3" HorizontalAlignment="Left" Margin="385,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" PlaceholderText="Side(h)"/>
+        <TextBox x:Name="i2" HorizontalAlignment="Left" Margin="260,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" PlaceholderText="Side(b)"/>
+        <Image x:Name="image" Source="image/tp2.png " HorizontalAlignment="Left" Height="300" Margin="763,244,0,0" VerticalAlignment="Top" Width="474"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,589,0,0" TextWrapping="Wrap" Text="The area of the Trapezium is :-" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333"/>
+        <TextBlock x:Name="Area" HorizontalAlignment="Left" Margin="486,589,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333" RenderTransformOrigin="0.317,0.458"/>
+        <Button x:Name="button1" Content="Back to Last Page" HorizontalAlignment="Left" Margin="979,659,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333" Click="button1_Click"/>
+        <Button x:Name="button" Content="Evaluate" HorizontalAlignment="Left" Margin="595,271,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" Click="button_Click"/>
+
+
+
+    </Grid>
+</Page>

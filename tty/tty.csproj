@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BC3FB46B-C674-429C-B894-16FA1E916273}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tty</RootNamespace>
+    <AssemblyName>tty</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>tty_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AShape.xaml.cs">
+      <DependentUpon>AShape.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="circle.xaml.cs">
+      <DependentUpon>circle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cloud.xaml.cs">
+      <DependentUpon>Cloud.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ecom.xaml.cs">
+      <DependentUpon>ecom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Education.xaml.cs">
+      <DependentUpon>Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipse.xaml.cs">
+      <DependentUpon>Ellipse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games.xaml.cs">
+      <DependentUpon>Games.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing.xaml.cs">
+      <DependentUpon>Mailing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Networking.xaml.cs">
+      <DependentUpon>Networking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="News.xaml.cs">
+      <DependentUpon>News.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parallelogram.xaml.cs">
+      <DependentUpon>Parallelogram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QAccess.xaml.cs">
+      <DependentUpon>QAccess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rectangle.xaml.cs">
+      <DependentUpon>Rectangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sector.xaml.cs">
+      <DependentUpon>Sector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Software.xaml.cs">
+      <DependentUpon>Software.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Square.xaml.cs">
+      <DependentUpon>Square.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Trapezium.xaml.cs">
+      <DependentUpon>Trapezium.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Triangle.xaml.cs">
+      <DependentUpon>Triangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Videos.xaml.cs">
+      <DependentUpon>Videos.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="tty_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\amazoncloud.jpg" />
+    <Content Include="Image\ask.jpg" />
+    <Content Include="Image\bbcnews.png" />
+    <Content Include="Image\bing.png" />
+    <Content Include="Image\brothersoft.gif" />
+    <Content Include="Image\cir2.jpg" />
+    <Content Include="Image\Circle.gif" />
+    <Content Include="Image\cnet.png" />
+    <Content Include="Image\cnnnews.jpg" />
+    <Content Include="Image\dronstudy.jpg" />
+    <Content Include="Image\ecamazon.jpg" />
+    <Content Include="Image\ecebay.jpeg" />
+    <Content Include="Image\ecflipkart.png" />
+    <Content Include="Image\ecjabong.png" />
+    <Content Include="Image\ecmyntra.jpg" />
+    <Content Include="Image\ecshimply.png" />
+    <Content Include="Image\ecshopclues.png" />
+    <Content Include="Image\ecsnapdeal.jpg" />
+    <Content Include="Image\ellipse.png" />
+    <Content Include="Image\elllipse.png" />
+    <Content Include="Image\fb.jpg" />
+    <Content Include="Image\fhippo.png" />
+    <Content Include="Image\fwf.jpg" />
+    <Content Include="Image\gamesaddicting.jpg" />
+    <Content Include="Image\gamesbigfish.png" />
+    <Content Include="Image\gamescom.jpg" />
+    <Content Include="Image\gamesminiclip.png" />
+    <Content Include="Image\gamespogo.jpg" />
+    <Content Include="Image\gamesy8.png" />
+    <Content Include="Image\gamesyahoo.png" />
+    <Content Include="Image\gmaeszynga.png" />
+    <Content Include="Image\Gmail.png" />
+    <Content Include="Image\google.jpg" />
+    <Content Include="Image\googlecloud.png" />
+    <Content Include="Image\googlenews.jpg" />
+    <Content Include="Image\googleplus.png" />
+    <Content Include="Image\hotmail.jpg" />
+    <Content Include="Image\htnews.jpg" />
+    <Content Include="Image\ibmcloud.jpg" />
+    <Content Include="Image\inboxmail.gif" />
+    <Content Include="Image\indiatimesnews.png" />
+    <Content Include="Image\instagram.png" />
+    <Content Include="Image\jagrannews.png" />
+    <Content Include="Image\khanacademy.jpg" />
+    <Content Include="Image\learnnext.jpg" />
+    <Content Include="Image\linkedin.png" />
+    <Content Include="Image\MeritNation.jpg" />
+    <Content Include="Image\Microsoftcloud.png" />
+    <Content Include="Image\motachashma.png" />
+    <Content Include="Image\myspace.jpg" />
+    <Content Include="Image\ndtvnews.png" />
+    <Content Include="Image\outlook.png" />
+    <Content Include="Image\Parallelogram.png" />
+    <Content Include="Image\pg.jpg" />
+    <Content Include="Image\Pinterest.jpg" />
+    <Content Include="Image\Pl2.gif" />
+    <Content Include="Image\rec2.gif" />
+    <Content Include="Image\rectangle.jpg" />
+    <Content Include="Image\Schoollamp.jpg" />
+    <Content Include="Image\sec2.gif" />
+    <Content Include="Image\sector.gif" />
+    <Content Include="Image\Softpedia.png" />
+    <Content Include="Image\Sq.gif" />
+    <Content Include="Image\Sq2.gif" />
+    <Content Include="Image\ssoftonicc.jpg" />
+    <Content Include="Image\studyadda.jpg" />
+    <Content Include="Image\tnytnews.png" />
+    <Content Include="Image\Topperlearning.jpg" />
+    <Content Include="Image\Tp2.png" />
+    <Content Include="Image\trapezium.jpg" />
+    <Content Include="Image\trapezum.jpg" />
+    <Content Include="Image\Trianglem.jpeg" />
+    <Content Include="Image\Triangles.jpeg" />
+    <Content Include="Image\twitter.jpg" />
+    <Content Include="Image\videodmotion.png" />
+    <Content Include="Image\videonetflix.png" />
+    <Content Include="Image\videovimeo.png" />
+    <Content Include="Image\videoyoutube.png" />
+    <Content Include="Image\videoyscreen.png" />
+    <Content Include="Image\Yahoo.jpg" />
+    <Content Include="Image\yahoomail.png" />
+    <Content Include="Image\yahoonews.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AShape.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="circle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cloud.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ecom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ellipse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mailing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Networking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="News.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Parallelogram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QAccess.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rectangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Software.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Square.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trapezium.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Triangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Videos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

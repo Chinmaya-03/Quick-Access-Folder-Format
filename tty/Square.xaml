@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="tty.Square"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="37,166,0,0" TextWrapping="Wrap" Text="Enter the length of the side of the square :-" VerticalAlignment="Top" FontFamily="Arial" FontSize="40"/>
+        <TextBox x:Name="i1" HorizontalAlignment="Left" Margin="211,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" PlaceholderText="Side(a)"/>
+        <Button x:Name="button" Content="Evaluate" HorizontalAlignment="Left" Margin="474,272,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="26.667" Click="button_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,587,0,0" TextWrapping="Wrap" Text="The area of the Square is :-" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333"/>
+        <TextBlock x:Name="Area" HorizontalAlignment="Left" Margin="439,587,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333"/>
+        <Button x:Name="button1" Content="Back to Last Page" HorizontalAlignment="Left" Margin="979,659,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="33.333" Click="button1_Click"/>
+        <Image x:Name="image" Source="image/sq2.gif " HorizontalAlignment="Left" Height="420" Margin="857,109,-80,0" VerticalAlignment="Top" Width="503"/>
+
+    </Grid>
+</Page>

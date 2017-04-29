@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="tty.Games"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tty"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <HyperlinkButton NavigateUri="http://www.pogo.com/" Margin="10,19,0,513" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="432">
+            <Image x:ConnectionId='10' x:Name="image1" Source="Image/gamespogo.jpg" HorizontalAlignment="Left" Margin="0,0,0,-23" Width="413" RenderTransformOrigin="0.397,-0.119"/>
+        </HyperlinkButton>
+        <HyperlinkButton  NavigateUri="http://www.y8.com/" Margin="41,233,0,246" Height="241">
+            <Image x:ConnectionId='9' x:Name="image" Source="Image/gamesy8.png" HorizontalAlignment="Left" Height="206" Margin="0" VerticalAlignment="Top" Width="312"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.addictinggames.com/" Margin="55,474,0,15" Height="231" Width="280">
+            <Image x:ConnectionId='8' x:Name="image3" Source="Image/gamesaddicting.jpg" HorizontalAlignment="Left" Height="164" Margin="0,0,0,-6" VerticalAlignment="Top" Width="221"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://zyngagames.com/" Margin="830,283,0,254" Height="183" Width="412">
+            <Image x:ConnectionId='7' x:Name="image4" Source="Image/gmaeszynga.png" HorizontalAlignment="Left" Height="198" Margin="0,0,-10,-27" VerticalAlignment="Top" Width="402"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.games.com/" Margin="799,522,0,36" Height="162" Width="471">
+            <Image x:ConnectionId='6' x:Name="image5" Source="Image/gamescom.jpg" HorizontalAlignment="Left" Height="72" Margin="0" VerticalAlignment="Top" Width="441" RenderTransformOrigin="0.5,0.5"/>
+        </HyperlinkButton>
+        <HyperlinkButton NavigateUri="http://www.miniclip.com/games/en/" Margin="827,72,0,463" Height="185" Width="443">
+            <Image x:ConnectionId='5' x:Name="image6" Source="Image/gamesminiclip.png" HorizontalAlignment="Left" Height="175" Margin="-36,-13,-26,-22" VerticalAlignment="Top" Width="433"/>
+        </HyperlinkButton>
+        <Button x:ConnectionId='1' x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="1144,10,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="29.333" Width="126"                     />
+        <HyperlinkButton NavigateUri="https://games.yahoo.com" Margin="483,19,0,463" Height="238" Width="290">
+            <Image x:ConnectionId='4' x:Name="image2" Source="Image/gamesyahoo.png" HorizontalAlignment="Left" Height="206" Margin="-23,-6,0,0" VerticalAlignment="Top" Width="244"/>
+        </HyperlinkButton>
+        <HyperlinkButton  NavigateUri="http://www.bigfishgames.com/" Margin="483,416,0,10" Width="347" Height="294">
+            <Image x:ConnectionId='3' x:Name="image7" Source="Image/gamesbigfish.png" HorizontalAlignment="Left" Height="242" Margin="0" VerticalAlignment="Top" Width="353" RenderTransformOrigin="0.539,0.502"/>
+        </HyperlinkButton>
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="483,304,0,0" TextWrapping="Wrap" Text="Games" VerticalAlignment="Top" FontFamily="Century" FontSize="73.333"/>
+
+    </Grid>
+</Page>
+
